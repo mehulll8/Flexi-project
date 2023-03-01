@@ -1,10 +1,11 @@
 import React from 'react'
-import { Button, Form, FormControl } from 'react-bootstrap';
+import {Button,Form, FormControl } from 'react-bootstrap';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Cart } from 'react-bootstrap-icons';
 
 function BasicExample() {
   return (
@@ -27,11 +28,14 @@ function BasicExample() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
+            <Form inline>
+              <FormControl type="text" placeholder="Search" className="mr-sm-2"></FormControl>
+            </Form>
           </Nav>
-          <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2"></FormControl>
-            <Button varient="outline-sucess">Search</Button>
-          </Form>
+          <Nav>
+            <button type="button" class="btn btn-light"><span class="bi bi-cart"><Cart/></span></button>
+            <Nav.Link href="#login">Login</Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
