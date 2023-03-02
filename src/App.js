@@ -1,6 +1,6 @@
 import './App.css';
 import Homepage from './Views/Homepage';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
