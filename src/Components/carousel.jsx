@@ -2,29 +2,22 @@ import { Button, Container } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import '../App.css';
 import '../bootstrap.min.css';
+import Image from 'react-bootstrap/Image'
 
 function UncontrolledExample() {
   return (
-    <Container>
+    <Container className='col-auto'>
         <Button>
-            <Carousel className='m-auto p-auto img-size'>
+            <Carousel className='m-auto p-auto carousel'>
             <Carousel.Item>
-                <img
-                className="d-block w-100"
-                src={require("./placeholder-image.jpg")}
-                alt="First slide"
-                />
+                <Image fluid src="https://placehold.jp/800x400.png"/>
                 <Carousel.Caption>
                 <h3>First slide label</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img
-                className="d-block w-100"
-                src={require("./placeholder-image.jpg")}
-                alt="Second slide"
-                />
+                <Image fluid src="https://placehold.jp/800x400.png"/>
 
                 <Carousel.Caption>
                 <h3>Second slide label</h3>
@@ -32,11 +25,7 @@ function UncontrolledExample() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img
-                className="d-block w-100"
-                src={require("./placeholder-image.jpg")}
-                alt="Third slide"
-                />
+                <Image fluid src="https://placehold.jp/800x400.png"/>
 
                 <Carousel.Caption>
                 <h3>Third slide label</h3>

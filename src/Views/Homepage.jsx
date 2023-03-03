@@ -4,6 +4,8 @@ import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button,  Container } from 'react-bootstrap';
 import UncontrolledExample from '../Components/carousel';
+import App from '../Components/flexbox';
+
 
 
 
@@ -21,6 +23,10 @@ const Homepage = () => {
         <br></br>
         <br></br>
         <UncontrolledExample></UncontrolledExample>
+        <br></br>
+      </Container>
+      <Container>
+        <App></App>
       </Container>
     </div>
   )
