@@ -37,8 +37,14 @@
   }
 }
 
-img {
-  width: 40px;
-  height: 40px;
- }
- 
+.img-size{
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .carousel {
+    width:auto;
+    height:auto;
+  }
+}
