@@ -1,14 +1,13 @@
-import React from "react";
-import '../App.css'
-import Image from 'react-bootstrap/Image'
+import React from 'react';
 
-export default function App(){
+const Flexbox = ({ imageSrc, altText }) => {
   return (
-    <div className="d-flex p-2 justify-content-evenly">
-        <Image fluid src="https://placehold.jp/200x100.png"/>
-        <Image fluid src="https://placehold.jp/200x100.png"/>
-        <Image fluid src="https://placehold.jp/200x100.png"/>
-        <Image fluid src="https://placehold.jp/200x100.png"/>
+    <div style={{ margin: '10px', display: 'flex', justifyContent: "space-between" , alignItems: 'center', height: '100vh' }}>
+      <div style={{ flex: '1', textAlign: 'center' }}>
+        <img src={imageSrc} alt={altText} style={{ maxWidth: '100%' }} />
+      </div>
     </div>
   );
-}
+};
+
+export default Flexbox;

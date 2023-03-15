@@ -9,7 +9,7 @@ import { Cart } from 'react-bootstrap-icons';
 
 function BasicExample() {
   return (
-    <Navbar bg="light" expand="lg" >
+    <Navbar bg="light" expand="lg" fixed="top">
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
