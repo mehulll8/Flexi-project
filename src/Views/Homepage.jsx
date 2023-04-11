@@ -4,6 +4,7 @@ import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button,  Col,  Container, Image, Row } from 'react-bootstrap';
 import UncontrolledExample from '../Components/carousel';
+import ImgOverlay from '../Functions/Card';
 
 const Homepage = () => {
   return (
@@ -32,14 +33,15 @@ const Homepage = () => {
         <Row className='mb-4' style={{ scrollSnapAlign: 'start' }}>
           <Col className='text-center'>
             <h1 className='m-auto'><b>Our latest arrivals</b></h1>
-            <p className='m-auto'>Placeholdder text 2 (Contains description of discount, new clothing etc)</p>
+            <p className='m-auto'>Placeholder text 2 (Contains description of discount, new clothing etc)</p>
+            <Button variant='outline-primary' size='lg'>Shop All</Button>
           </Col>
         </Row>
         <Row className='justify-content-center mb-4' style={{ scrollSnapAlign: 'center' }}>
           <Col sm='auto' xs='auto' md='auto' lg='auto' className='d-flex justify-content-around'>
-            <Image  src="https://placehold.jp/400x800.png" altText="Image 1" className='mr-2 ml-2'/>
-            <Image  src="https://placehold.jp/400x800.png" altText="Image 2" className='mr-2 ml-2'/>
-            <Image  src="https://placehold.jp/400x800.png" altText="Image 3" className='mr-2 ml-2'/>
+            <ImgOverlay imgSrc="https://placehold.jp/400x600.png" title="Image1" text="This is the first image"  className='mr-2 ml-2'/>
+            <ImgOverlay imgSrc="https://placehold.jp/400x600.png" title="Image1" text="This is the first image"  className='mr-2 ml-2'/>
+            <ImgOverlay imgSrc="https://placehold.jp/400x600.png" title="Image1" text="This is the first image"  className='mr-2 ml-2'/>
           </Col>
         </Row>
       </Container>
