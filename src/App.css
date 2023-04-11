@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.img-size{
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .carousel {
+    width:auto;
+    height:auto;
+  }
+}
+
